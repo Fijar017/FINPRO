@@ -1,0 +1,50 @@
+.img-fluid {
+    width: 180px;
+    height: 40px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+
+.btn {
+    color: #fff;
+    background-color: #a24642;
+    border-color: black;
+}
+
+.btn-group{
+    position: relative;
+    left: 42vw;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #f29b08;
+    border-width: 2px;
+    border-color: rgba(177, 157, 86, 0.953);
+}
+
+nav {
+    background-color:#a24642;
+}
+
+.navbar-container{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.625em 3.75rem;
+}
+
+li .nav-link:hover{
+    background-color: #f29b08;
+    border-radius: 10px;
+}
+
+.box-nav{
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.btn-profile:hover{
+    background-color: aliceblue !important;
+}

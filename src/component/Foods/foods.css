@@ -1,0 +1,52 @@
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttoneditdelete {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-create{
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border: 1px solid #a24642;
+    color: #a24642;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.btn-create::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #a24642;
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn-create:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.btn-create:hover{
+    color: #fff;
+} 
+
+.set-rating{
+    text-decoration: none;
+}
