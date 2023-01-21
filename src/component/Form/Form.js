@@ -28,7 +28,7 @@ const Form = () => {
       email: "",
       password: "",
       passwordRepeat: "",
-      role: "",
+      role: "user",
       phoneNumber: "",
     },
     onSubmit: (values) => {
@@ -201,23 +201,6 @@ const Form = () => {
                 formik.errors.passwordRepeat ? (
                   <div>{formik.errors.passwordRepeat}</div>
                 ) : null}
-              </div>
-              <div className="input-field">
-                <i className="fas fa-user"></i>
-                <select
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.role}
-                  component="select"
-                  id="role"
-                  name="role"
-                  multiple={false}
-                  className="select-field"
-                >
-                  <option value="">Select a Role</option>
-                  <option value="admin">Admin</option>
-                  <option value="user">User</option>
-                </select>
               </div>
               <div className="input-field">
                 <i className="fa fa-phone"></i>
